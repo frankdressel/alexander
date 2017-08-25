@@ -16,6 +16,8 @@ You can start the uberjar with:
 
 	java -jar alexander-stanford-<version>-swarm.jar
 	
+The service is available under http://localhost:8080/rest/parser/ner.
+	
 ## Testing
 
 JUnit tests are automatically performed during the build.
