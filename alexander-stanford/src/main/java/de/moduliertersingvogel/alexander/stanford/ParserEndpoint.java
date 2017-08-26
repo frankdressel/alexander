@@ -36,7 +36,7 @@ public class ParserEndpoint {
 		props.setProperty("tokenize.language", "de");
 		props.setProperty("ner.model", "edu\\stanford\\nlp\\models\\ner\\german.conll.hgc_175m_600.crf.ser.gz");
 		props.setProperty("pos.model",
-				this.getClass().getClassLoader().getResource("edu/stanford/nlp/models/pos-tagger/german/german-hgc.tagger").toString());
+				this.getClass().getClassLoader().getResource("edu/stanford/nlp/models/pos-tagger/german/german-fast.tagger").toString());
 		props.setProperty("parse.model", "edu\\stanford\\nlp\\models\\lexparser\\germanPCFG.ser.gz");
 		props.setProperty("ner.useSUTime", "0");
 		this.pipeline = new StanfordCoreNLP(props);
